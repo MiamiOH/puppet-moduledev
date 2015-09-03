@@ -1,0 +1,9 @@
+2015-08-03 (0.0.2)  Michael Callahan
+        * Switched to new file placement method
+        * Dropped bash automation in favor of native puppet control
+
+2015-07-30 (0.0.2)  Michael Callahan
+        * Started writing file placement manifest
+
+2015-07-29 (0.0.1)  Michael Callahan
+        * Initial outline of project

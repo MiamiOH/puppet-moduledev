@@ -1,0 +1,64 @@
+{
+  "name": "MiamiOH-moduledev",
+  "version": "0.0.1",
+  "author": "Michael Callahan, Chris Edester",
+  "summary": "Quick deployment of a module testing environment",
+  "license": "Apache-2.0",
+  "source": "https://github.com/MiamiOH/",
+  "project_page": "https://github.com/MiamiOH/",
+  "issues_url": "https://github.com/MiamiOH/",
+  "tags": ["module","development"],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.1.0 <5.0.0"},
+    {"name":"theforeman/git","version_requirement":">= 1.4.1 <2.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement":">= 3.4.0 < 5.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement":">= 3.4.0 < 5.0.0"
+    }
+  ]
+}
