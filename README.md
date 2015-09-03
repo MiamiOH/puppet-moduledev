@@ -5,33 +5,19 @@ httpproxy
 
 1. [Overview](#overview)
 2. [Usage - Configuration options and additional functionality](#usage)
-    * [Customize the httpproxy options](#customize-the-httpproxy-options)
 3. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 4. [Limitations - OS compatibility, etc.](#limitations)
 5. [Contributors](#contributors)
 
 ## Overview
 
-This module was created to streamline proxy management of popular software. It can place and remove
-proxies in profile.d, apt, yum, and wget. Currently only http (no https) proxies are supported.
+This module was created to streamline module development. The module will ensure proper linting and raking packages are installed. The module also has the ability to place a file structure for starting a module from scratch. Pairing this module with a virtualized and readily deployed Linux OS can make module development clean and simple.
 
 ## Usage
-    class { '::httpproxy':
-      wget            => true,
-      profiled        => true,
-      packagemanager  => true,
-      http_proxy      => 'my.proxy.com',
-      http_proxy_port => '80'
-    }
 
-Puppet will manage the proxy for the desired software when its boolean is set to true. When a proxy is entered,
-puppet will ensure that the proxy is present. If a proxy is left undefined, puppet will remove whatever proxy it
-placed (ensure absent). If the boolean is set to false, nothing will be removed or placed.
 
 ## Reference
 
-httpproxy uses the Unibets profile.d management module to manage proxies in profile.d. The puppetlabs/inifile
-resource is used to manage the yum and wget proxies. The apt proxy is managed via the puppetlabs/apt module.
 
 Please contribute, pull requests are welcome. The more proxies that can be managed the better.
 
