@@ -5,7 +5,7 @@ class moduledev::params {
   case $::osfamily {
     'Redhat': {
       $packages = ['gcc', 'gcc-c++', 'ruby-devel', 'zlib-devel']
-      $home_path = '/home/'
+      $home_path = '/home'
     }
 
     'Debian': {
@@ -13,9 +13,9 @@ class moduledev::params {
       $home_path = '/home'
     }
 
-    'Darwin': {
-      $home_path = '/Users'
-    }
+    #'Darwin': {
+    #  $home_path = '/Users'
+    #}
 
     default: { fail('OS family not supported') }
   }
